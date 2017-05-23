@@ -1,0 +1,23 @@
+
+<h1>Testing</h1>
+<span>Testing HTML</span>
+
+
+
+
+<md-card class="example-card">
+  <md-card-header>
+    <div md-card-avatar class="example-header-image"></div>
+    <md-card-title>{{game.name}} ({{game.bggId}})</md-card-title>
+    <md-card-subtitle>{{game.yearPublished}}</md-card-subtitle>
+  </md-card-header>
+  <img md-card-sm-image src="https://cf.geekdo-images.com/images/pic319267_t.jpg">
+  <md-card-content>
+    <p>
+      {{game.description}}
+    </p>
+  </md-card-content>
+  <md-card-actions>
+    <button md-button (click)="goTo(game)">GO TO</button>
+  </md-card-actions>
+</md-card>
