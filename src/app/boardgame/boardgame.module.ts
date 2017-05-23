@@ -4,7 +4,7 @@ import {SharedModule} from '../shared/shared.module';
 import {BoardgameComponent} from './boardgame/boardgame.component';
 import {BoardgamesComponent} from './boardgames/boardgames.component';
 import {CommonModule} from '@angular/common';
-import {MdButton, MdCardModule, MdChipsModule} from '@angular/material';
+import { MdButtonModule, MdCardModule, MdChipsModule} from '@angular/material';
 
 
 @NgModule({
@@ -13,7 +13,7 @@ import {MdButton, MdCardModule, MdChipsModule} from '@angular/material';
     CommonModule,
     MdCardModule,
     MdChipsModule,
-    MdButton
+    MdButtonModule
     ],
   exports:[
     BoardgameComponent,
