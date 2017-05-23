@@ -9,6 +9,7 @@ import 'rxjs/add/operator/map'
 })
 export class AppComponent {
   title = 'Boardgame library!';
+  private menuItems= ['attachment','cloud_download'];
 
   constructor() {
     console.log('Called constructor of app.component');

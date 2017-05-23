@@ -1,8 +1,3 @@
-.example-card {
-  width: 400px;
-}
-
-.example-header-image {
-  background-image: url('https://cf.geekdo-images.com/images/pic319267_t.jpg');
-  background-size: cover;
+.bgl-spacer {
+  flex: 1 1 auto;
 }
