@@ -1,6 +1,21 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar color="primary">
+
+  <span class="bgl-spacer">Boardgame library</span>
+
+
+  <button md-icon-button [mdMenuTriggerFor]="menu">
+    <md-icon class="material-icons">more_vert</md-icon>
+  </button>
+  <md-menu #menu="mdMenu">
+    <button md-menu-item *ngFor="let menuItem of menuItems">
+      <md-icon class="material-icons">{{menuItem}}</md-icon>
+      <span>{{menuItem}}</span>
+    </button>
+  </md-menu>
+
+</md-toolbar>
+
+
 
 <app-boardgames></app-boardgames>
 

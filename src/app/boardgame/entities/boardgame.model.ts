@@ -1,3 +1,4 @@
+import {GameTypes} from './gametypes.model';
 /**
  * Created by JoLe on 18/05/2017.
  */
@@ -9,6 +10,9 @@ export class Boardgame {
     public description?: string,
     public thumbnail?: string,
     public image?: string,
-    public yearPublished?: string
+    public yearPublished?: string,
+    public minplayers?: number,
+    public maxplayers?: number,
+    public gameTypes?: GameTypes
   ) { }
 }
