@@ -1,18 +1,22 @@
-import {GameTypes} from './gametypes.model';
 /**
  * Created by JoLe on 18/05/2017.
  */
-export class Boardgame {
-  constructor(
-    //public id?: number,
-    public bggId?: string,
-    public name?: string,
-    public description?: string,
-    public thumbnail?: string,
-    public image?: string,
-    public yearPublished?: string,
-    public minplayers?: number,
-    public maxplayers?: number,
-    public gameTypes?: GameTypes
-  ) { }
+interface GameTypes {
+  boardgamecategory?: string[],
+  boardgamesubdomain?: string[],
+  boardgamemechanic?: string[],
+  boardgamefamily?: string[]
+}
+
+export interface Boardgame {
+
+  bggId?: string,
+  name?: string,
+  description?: string,
+  thumbnail?: string,
+  image?: string,
+  yearPublished?: string,
+  minplayers?: number,
+  maxplayers?: number,
+  gameTypes?: GameTypes
 }
