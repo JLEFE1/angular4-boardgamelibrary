@@ -9,7 +9,10 @@ import 'hammerjs';
 
 import {MdMenuModule, MdToolbarModule} from '@angular/material';
 import { SharedModule } from './shared/shared.module';
-import { BoardgameModule } from './boardgame/boardgame.module';
+import { BoardgameModule } from './boardgames/boardgame.module';
+import { SearchModule } from './search/search.module';
+import {AppRoutingModule} from './app-routing.module';
+import {HomeModule} from './home/home.module';
 
 @NgModule({
   declarations: [
@@ -19,9 +22,12 @@ import { BoardgameModule } from './boardgame/boardgame.module';
     BrowserModule,
     SharedModule,
     BoardgameModule,
+    HomeModule,
+    SearchModule,
     FormsModule,
     HttpModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
     MdToolbarModule,
     MdMenuModule
   ],
