@@ -1,6 +1,6 @@
 <md-toolbar color="primary">
 
-  <span class="bgl-spacer">Boardgame library</span>
+  <span class="bgl-spacer">{{title}}</span>
 
 
   <button md-icon-button [mdMenuTriggerFor]="menu">
@@ -15,7 +15,5 @@
 
 </md-toolbar>
 
-
-
-<app-boardgames></app-boardgames>
+<router-outlet></router-outlet>
 

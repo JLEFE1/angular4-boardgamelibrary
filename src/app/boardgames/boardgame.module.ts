@@ -2,9 +2,10 @@ import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 
 import {SharedModule} from '../shared/shared.module';
 import {BoardgameComponent} from './boardgame/boardgame.component';
-import {BoardgamesComponent} from './boardgames/boardgames.component';
 import {CommonModule} from '@angular/common';
 import { MdButtonModule, MdCardModule, MdChipsModule} from '@angular/material';
+import {BoardgameListComponent} from './boardgame-list/boardgame-list.component';
+import {BoardgamesComponent} from './boardgames.component';
 
 
 @NgModule({
@@ -15,13 +16,15 @@ import { MdButtonModule, MdCardModule, MdChipsModule} from '@angular/material';
     MdChipsModule,
     MdButtonModule
     ],
-  exports:[
+  exports: [
     BoardgameComponent,
-    BoardgamesComponent
+    BoardgamesComponent,
+    BoardgameListComponent
   ],
   declarations: [
     BoardgameComponent,
-    BoardgamesComponent
+    BoardgamesComponent,
+    BoardgameListComponent
 
   ],
   schemas: [

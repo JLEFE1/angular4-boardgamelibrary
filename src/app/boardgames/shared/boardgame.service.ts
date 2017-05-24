@@ -7,11 +7,11 @@ export class BoardgameService {
   constructor(private http: Http) { }
 
 
-  getAllGames(){
+  getAllGames() {
     return this.http.get('http://localhost:8080/boardgames/all').map(res => res.json());
   }
 
-  findGame(game){
+  findGame(game) {
     return this.http.get('http://localhost:8080/boardgames/findOne/' + game.bggId).map(res => res.json());
   }
 

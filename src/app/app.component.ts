@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import 'rxjs/add/operator/map'
+import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +9,9 @@ import 'rxjs/add/operator/map'
 })
 export class AppComponent {
   title = 'Boardgame library!';
-  private menuItems= ['attachment','cloud_download'];
+  private menuItems= ['attachment', 'cloud_download'];
 
   constructor() {
-    console.log('Called constructor of app.component');
   }
 
 
